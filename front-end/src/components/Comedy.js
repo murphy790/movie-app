@@ -1,13 +1,13 @@
-import React from 'react'
+// import React from 'react'
 
-function Comedy() {
+// function Comedy() {
   
-  return (
-    <div>
-    Comed
-  </div>
+//   return (
+//     <div>
+//     Comed
+//   </div>
     
-  )
-}
+//   )
+// }
 
-export default Comedy
+// export default Comedy
