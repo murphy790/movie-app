@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Row,Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 // import React, useState from 'react'
@@ -41,6 +42,9 @@ const handleMovieId = (e) => {
     alert(`Review successfully submitted`)
   }
   return (
+    <Row>
+      <Col></Col>
+      <Col>
     <Form>
       <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>NAME</Form.Label>
@@ -70,6 +74,9 @@ const handleMovieId = (e) => {
         Submit
       </Button>
     </Form>
+    </Col>
+    <Col></Col>
+    </Row>
     // <div>
     //   <form>
     //   <label className="label">Name</label>
