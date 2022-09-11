@@ -77,30 +77,7 @@ const handleMovieId = (e) => {
     </Col>
     <Col></Col>
     </Row>
-    // <div>
-    //   <form>
-    //   <label className="label">Name</label>
-    //             <input onChange={handleName} className="input"
-    //                 value={name} type="text" />
-
-    //             <label className="label">Comment</label>
-    //             <input onChange={handleComment} className="input"
-    //                 value={comment} type="comment" />
-
-    //             <label className="label">Score</label>
-    //             <input onChange={handleScore} className="input"
-    //                 value={score} type="score" />
-    //             <label className="label">movieId</label>
-    //             <input onChange={handleMovieId} className="input"
-    //                 value={movieId} type="movieId" />
-    //             <label className="label">userId</label>
-    //             <input onChange={handleUserId} className="input"
-    //                 value={userId} type="userId" />
-    //             <button onClick={handleSubmit} className="btn" type="submit">
-    //                 Submit
-    //             </button>
-    // </form>
-    // </div>
+    
   )
 }
 
