@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/movies/:category' do
-    movie = Movie.find_by( category:params[:category])
+    movie = Movie.where(`genre_id=#{params[:category]}`)
     movie.to_json
   end
   post '/reviews/:id' do

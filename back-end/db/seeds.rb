@@ -1,4 +1,15 @@
 puts "🌱 Seeding spices..."
+30.times do |num|
+    pic_id = num.to_s
+    path = "https://picsum.photos/id/" + pic_id +"/200/300"
+    puts path
+    Movie.create(title: Faker::Movie.title,overview: Faker::Movie.quote,release_date: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now, format: :long),vote_average: rand(1..10),poster_path: path , genre_id: rand(1..10))
+
+end
+
+10.times do
+    Genre.create(name: Faker::Book.genre)
+end
 
 # Seed your database here
 # API_KEY = "&api_key=b43cd0618a0928101b9018dd947ba5f5";

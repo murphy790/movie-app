@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_09_113034) do
+ActiveRecord::Schema.define(version: 2022_09_11_183358) do
+
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
+    t.string "moviedb_id"
+  end
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
@@ -19,6 +24,7 @@ ActiveRecord::Schema.define(version: 2022_09_09_113034) do
     t.integer "vote_average"
     t.string "poster_path"
     t.string "category"
+    t.string "genre_id"
   end
 
   create_table "reviews", force: :cascade do |t|

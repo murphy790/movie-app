@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route path="/trending" element={<Trending/>}></Route>
+          <Route path="/fantasy" element={<Trending/>}></Route>
           <Route path="/kids" element={<Kids/>}></Route>
           <Route path="/drama" element={<Drama/>}></Route>
           <Route path="/comedy" element={<Comedy/>}></Route>
