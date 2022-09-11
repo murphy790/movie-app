@@ -4,7 +4,7 @@ function Comedy() {
   
   return (
     <div>
-    Comed
+    Comedy
   </div>
     
   )
