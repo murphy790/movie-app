@@ -36,7 +36,7 @@ function Drama() {
         {/* {Array.from({ length: 4 }).map((_, idx) => ( */}
         <Col>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src={movie.poster_path} />
             <Card.Body>
               <Card.Title>{movie.title}</Card.Title>
               <Card.Text>
@@ -62,9 +62,9 @@ function Drama() {
   let myMovies = movies.map((movie) => (
 
     <div>
-      <h1>{movie.title}</h1>
-      <p>{movie.overview}</p>
-      <h2>{movie.vote_average}</h2>
+      {/* <h1>{movie.title}</h1> */}
+      {/* <p>{movie.overview}</p> */}
+      {/* <h2>{movie.vote_average}</h2> */}
       {/* <h3></h3> */}
       {movieCard(movie)}
 
@@ -77,7 +77,7 @@ function Drama() {
   if (!isLoaded) return <h3>Loading...</h3>;
   return (
     <div>
-      <Alert variant='success'>hello this an alert!</Alert>
+      <Alert variant='success'>Drama Movies</Alert>
       {myMovies}
     </div>
   )

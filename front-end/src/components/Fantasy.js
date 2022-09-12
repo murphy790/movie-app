@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 
-function Trending() {
+function Fantasy() {
   const [movies, setMovies] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
   console.log("murphy")
@@ -78,10 +78,10 @@ function Trending() {
   if (!isLoaded) return <h3>Loading...</h3>;
   return (
     <div>
-      <Alert variant='success'>hello this an alert!</Alert>
+      <Alert variant='success'>Fantasy Movies</Alert>
       {myMovies}
     </div>
   )
 }
 
-export default Trending
+export default Fantasy

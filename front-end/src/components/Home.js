@@ -10,7 +10,7 @@ function Home() {
         <Col>
     <div>
       <h1 className='firstheading'>Snacks and Screens</h1>
-      <p>Snacks and Screens is a movie app that helps the user discover movies.So pick the snacks,we help you pick that movie.Shhhh....the movie is about to start!</p>
+      <p>Screens and snacks is a movie app that helps the user discover movies.So pick the snacks,we help you pick that movie.Shhhh....the movie is about to start!</p>
     </div>
     </Col>
     <Col>
