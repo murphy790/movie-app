@@ -43,11 +43,16 @@ function Drama() {
                 {movie.overview}
               </Card.Text>
               <Button variant="primary" size= "lg">{movie.vote_average}</Button>
-              <Link to="/reviews">
+              <Link to={"/reviews/"+movie.id}>
                 <Button variant="success" size="lg">
                   Review
                 </Button>
               </Link>
+              {/* <Link to={"/reviews/"+movie.id}>
+                <Button variant="success" size="lg">
+                  Show Reviews
+                </Button>
+              </Link> */}
             </Card.Body>
           </Card>
         </Col>

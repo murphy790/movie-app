@@ -5,14 +5,18 @@ class ApplicationController < Sinatra::Base
     movies = Movie.all.order(:title).limit(10)
     movies.to_json
   end
+  # get '/movies/:id' do
+  #   movies = Movie.find(params[:id])
+  #   movies.to_json
+  # end
 
-  get '/reviews' do
-    reviews = Review.all
+  get '/moviereviews/:movie_id' do
+    review = Review.where(movie_id: params[:movie_id])
     reviews.to_json
   end
   
   get '/movies/:category' do
-    movie = Movie.where(`genre_id=#{params[:category]}`)
+    movie = Movie.where(genre_id: params[:category])
     movie.to_json
   end
   post '/reviews/:id' do

@@ -7,9 +7,8 @@ puts "🌱 Seeding spices..."
 
 end
 
-10.times do
-    Genre.create(name: Faker::Book.genre)
-end
+
+    Genre.create(name:)
 
 # Seed your database here
 # API_KEY = "&api_key=b43cd0618a0928101b9018dd947ba5f5";
