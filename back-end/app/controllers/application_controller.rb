@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   #   movies.to_json
   # end
 
-  get '/moviereviews/:movie_id' do
+  get '/reviews/:movie_id' do
     review = Review.where(movie_id: params[:movie_id])
     reviews.to_json
   end

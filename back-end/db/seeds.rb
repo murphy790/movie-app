@@ -8,7 +8,16 @@ puts "🌱 Seeding spices..."
 end
 
 
-    Genre.create(name:)
+    Genre.create(name:"Comedy")
+    Genre.create(name:"Adventure")
+    Genre.create(name:"Fantasy")
+    Genre.create(name:"Drama")
+    Genre.create(name:"Horror")
+    Genre.create(name:"Textbook")
+    Genre.create(name:"Kids")
+    Genre.create(name:"Thriller")
+    Genre.create(name:"Documentary")
+    Genre.create(name:"Humor")
 
 # Seed your database here
 # API_KEY = "&api_key=b43cd0618a0928101b9018dd947ba5f5";

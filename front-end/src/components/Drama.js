@@ -18,7 +18,7 @@ function Drama() {
   // const url = `http://www.omdbapi.com/?t=${search}&apikey=${API_KEY}`;
 
   useEffect(() => {
-    fetch("http://localhost:9292/movies")
+    fetch("http://localhost:9292/movies/4")
       .then((response) => response.json())
       .then((data) => {
         // data.map((movie)=>{setMovies(movie)})

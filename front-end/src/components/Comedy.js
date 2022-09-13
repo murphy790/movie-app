@@ -10,21 +10,13 @@ import { Link } from 'react-router-dom';
 function Comedy() {
   const [movies, setMovies] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  console.log("murphy")
-
-  // const API_KEY = "&api_key=b43cd0618a0928101b9018dd947ba5f5";
-  // const base_url = "https://api.themoviedb.org/3";
-  // const url = base_url+"/discover/movie?with_genres=18&primary_release_year=2014"+API_KEY;
-  // const url = `http://www.omdbapi.com/?t=${search}&apikey=${API_KEY}`;
 
   useEffect(() => {
     fetch("http://localhost:9292/movies/1")
       .then((response) => response.json())
       .then((data) => {
-        // data.map((movie)=>{setMovies(movie)})
         setMovies(data)
         console.log(data)
-        // setMovies(data.results);
         setIsLoaded(true);
       });
   }, []);
