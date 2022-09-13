@@ -34,8 +34,8 @@ function Comedy() {
               <Card.Text>
                 {movie.overview}
               </Card.Text>
-              <Button variant="primary" size= "lg">{movie.vote_average}</Button>
-              <Link to={"/reviews/"+movie.id}>
+              <Button variant="primary" size="lg">Vote:{movie.vote_average}</Button>
+              <Link to={"/reviews/" + movie.id}>
                 <Button variant="success" size="lg">
                   Review
                 </Button>
@@ -54,10 +54,6 @@ function Comedy() {
   let myMovies = movies.map((movie) => (
 
     <div>
-      {/* <h1>{movie.title}</h1> */}
-      {/* <p>{movie.overview}</p> */}
-      {/* <h2>{movie.vote_average}</h2> */}
-      {/* <h3></h3> */}
       {movieCard(movie)}
 
     </div>
